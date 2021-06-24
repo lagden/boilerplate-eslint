@@ -6,14 +6,16 @@ module.exports = {
 	env: {
 		es2021: true,
 		node: true,
-		browser: true,
 	},
 	parser: '@babel/eslint-parser',
 	parserOptions: {
 		ecmaVersion: 12,
 		sourceType: 'module',
 	},
-	extends: ['xo', 'plugin:unicorn/recommended'],
+	extends: [
+		'xo',
+		'plugin:unicorn/recommended',
+	],
 	rules: {
 		indent: ['error', 'tab'],
 		'linebreak-style': ['error', 'unix'],
@@ -28,7 +30,6 @@ module.exports = {
 		],
 		'no-console': 0,
 		'no-debugger': 0,
-		// 'no-unused-expressions': 0,
 		'no-unused-expressions': [
 			'error',
 			{
@@ -46,9 +47,8 @@ module.exports = {
 		'unicorn/prevent-abbreviations': 0,
 		'unicorn/no-reduce': 0,
 		'unicorn/no-array-reduce': 0,
-		'unicorn/prefer-includes': 0,
-		'unicorn/no-useless-undefined': 0,
-		'unicorn/no-zero-fractions': 0,
 		// 'unicorn/no-abusive-eslint-disable': 0,
+		// Bug no ctx.body Koa
+		'require-atomic-updates': 0,
 	},
 }
