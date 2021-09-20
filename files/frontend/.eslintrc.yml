@@ -63,11 +63,3 @@ rules:
       maxEOF: 0
   # Bug no ctx.body Koa
   require-atomic-updates: off
-settings:
-  svelte3/ignore-warnings:
-    a11y-no-onchange: true
-    a11y-label-has-associated-control: true
-  svelte3/ignore-styles:
-    attributes:
-      postcss: true
-      lang: true
