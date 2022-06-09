@@ -1,22 +1,22 @@
-/*eslint unicorn/prefer-module: 0 */
+/*eslint unicorn/prefer-module: 0*/
 
 'use strict'
 
 const ignoreWarnings = new Set([
 	'a11y-no-onchange',
 	'a11y-label-has-associated-control',
-	'missing-declaration',
+	// 'missing-declaration',
 ])
 
 module.exports = {
 	env: {
-		es2021: true,
+		es2022: true,
 		node: true,
 		browser: true,
 	},
 	parser: '@babel/eslint-parser',
 	parserOptions: {
-		ecmaVersion: 12,
+		ecmaVersion: 13,
 		sourceType: 'module',
 	},
 	plugins: ['html', 'svelte3'],
