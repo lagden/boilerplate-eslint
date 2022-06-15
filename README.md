@@ -17,13 +17,13 @@ Essas **variáveis de ambiente** dependem de uma estrutura específica para que 
 
 **Exemplo:**
 
-```
-yarn dlx degit lagden/boilerplate-rest#master meu_app
-cd meu_app
-yarn dlx degit lagden/boilerplate-bin/files#main bin
-yarn dlx degit lagden/boilerplate-eslint/files/backend#main ./ --force
-yarn dlx degit lagden/boilerplate-envs/files#main ./ --force
-yarn dlx degit lagden/boilerplate-docker-nodejs/files#main ./ --force
+```shell
+npx tiged lagden/boilerplate-rest#main projeto
+cd projeto
+npx tiged lagden/boilerplate-bin/files#main bin --force
+npx tiged lagden/boilerplate-eslint/files/backend/.eslintrc.yml#main .eslintrc.yml --force
+npx tiged lagden/boilerplate-envs/files#main . --force
+npx tiged lagden/boilerplate-docker-nodejs/files#main . --force
 ```
 
 
