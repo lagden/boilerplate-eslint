@@ -15,12 +15,11 @@ module.exports = {
 		node: true,
 		browser: true,
 	},
-	// parser: '@babel/eslint-parser',
 	parserOptions: {
 		ecmaVersion: 13,
 		sourceType: 'module',
 	},
-	extends: ['prettier', 'xo', 'plugin:unicorn/recommended'],
+	extends: ['xo', 'plugin:unicorn/recommended'],
 	plugins: ['svelte3'],
 	overrides: [
 		{
@@ -55,6 +54,7 @@ module.exports = {
 		'capitalized-comments': 0,
 		'spaced-comment': 0,
 		'padding-line-between-statements': 0,
+		'no-multi-assign': 0,
 		'no-undef-init': 0,
 		'unicorn/filename-case': 0,
 		'unicorn/prevent-abbreviations': 0,
