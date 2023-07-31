@@ -6,7 +6,7 @@ parserOptions:
   ecmaVersion: 13
   sourceType: module
 extends:
-  - xo
+  - eslint:recommended
   - plugin:unicorn/recommended
 rules:
   indent: [error, tab]
