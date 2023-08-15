@@ -1,13 +1,16 @@
 root: true
 env:
   es2022: true
+  browser: true
   node: true
 parserOptions:
   ecmaVersion: 13
   sourceType: module
+  extraFileExtensions: ['.svelte']
 extends:
   - eslint:recommended
-  - plugin:unicorn/recommended
+  - plugin:svelte/recommended
+  - plugin:unicorn/recommendeda
 rules:
   camelcase: off
   capitalized-comments: off
@@ -32,7 +35,6 @@ rules:
       allowTaggedTemplates: true
   padding-line-between-statements: off
   quotes: [error, single]
-  # require-atomic-updates: off
   semi:  [error, never]
   semi-spacing:
     - error
