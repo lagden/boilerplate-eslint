@@ -1,7 +1,6 @@
 root: true
 env:
   es2022: true
-  browser: true
   node: true
 parserOptions:
   ecmaVersion: 13
@@ -9,8 +8,9 @@ parserOptions:
   extraFileExtensions: ['.svelte']
 extends:
   - eslint:recommended
+  - plugin:sonarjs/recommended
   - plugin:svelte/recommended
-  - plugin:unicorn/recommendeda
+  - plugin:unicorn/recommended
 rules:
   camelcase: off
   capitalized-comments: off
@@ -29,17 +29,15 @@ rules:
   no-undef-init: off
   no-unused-expressions:
     - error
-    -
-      allowShortCircuit: true
+    - allowShortCircuit: true
       allowTernary: true
       allowTaggedTemplates: true
   padding-line-between-statements: off
   quotes: [error, single]
-  semi:  [error, never]
+  semi: [error, never]
   semi-spacing:
     - error
-    -
-      before: false
+    - before: false
       after: true
   spaced-comment: off
   # unicorn/consistent-destructuring: off
